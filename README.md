@@ -7,8 +7,10 @@ a light wet highly customize able  jQuery plugin for progress bar
   <link rel="stylesheet" href="assets/css/jquery.rprogessbar.min.css">
   
 #load rprogressbar js
+<pre>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
  <script src="assets/js/jQuery.rProgressbar.min.js"></script>
+</pre>
     
 #if you don't have jquery script than use like below order    
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
