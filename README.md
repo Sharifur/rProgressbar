@@ -2,9 +2,7 @@
 a light wet highly customize able  jQuery plugin for progress bar 
 
 #load rprogressbar css
-  <code>
-  <link rel="stylesheet" href="assets/css/jquery.rprogessbar.min.css">
-  </code>
+ #<link rel="stylesheet" href="assets/css/jquery.rprogessbar.min.css">
   
 #load rprogressbar js
 <pre>
