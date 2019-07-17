@@ -1,10 +1,10 @@
 # rProgressbar
 a light wet highly customize able  jQuery plugin for progress bar 
 
-#How to active rProgressbar
-
 #load rprogressbar css
+  <pre>
   <link rel="stylesheet" href="assets/css/jquery.rprogessbar.min.css">
+  </pre>
   
 #load rprogressbar js
 <pre>
