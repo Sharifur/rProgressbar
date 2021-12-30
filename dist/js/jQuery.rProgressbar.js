@@ -20,7 +20,7 @@
             fillBackgroundColor: '#ed1c24',
             backgroundColor: '#EEEEEE',
             borderRadius: '0px',
-            height: '10px',
+            height: '5px',
             width: '100%'
         }, options);
 
@@ -32,11 +32,12 @@
             var lineProgressBarInit = function() {
                 var progressFill = $(el).find('.proggress');
                 var progressBar = $(el).find('.progressbar');
+                var progressCount = $(el).find('.percentCount');
 
                 progressFill.css({
                     backgroundColor: options.fillBackgroundColor,
                     height: options.height,
-                    borderRadius: options.borderRadius
+                    borderRadius: options.borderRadius,
                 });
                 progressBar.css({
                     width: options.width,
@@ -46,13 +47,23 @@
 
                 // Progressing
                 progressFill.animate({
-                    width: options.percentage + "%"
+                    width: options.percentage > 100 ? 100 + "%" : options.percentage  + "%"
                 }, {
                     step: function(x) {
                         if (options.ShowProgressCount) {
                             $(el).find(".percentCount").text(Math.round(x) + "%");
                         }
                     },
+                    duration: options.duration
+                });
+
+                var animatePropery = {left: options.percentage > 100 ? 93 + "%" : options.percentage + "%"};
+
+                if($('html').attr('dir') == 'rtl'){
+                    animatePropery = {right: options.percentage > 100 ? 93 + "%" : options.percentage + "%"};
+                }
+
+                progressCount.animate(animatePropery, {
                     duration: options.duration
                 });
             }
